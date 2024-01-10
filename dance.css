@@ -1,0 +1,207 @@
+.body {
+    font-family: 'Arial', sans-serif;
+    margin:0;
+    
+   
+}
+
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+  h1, h2 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+/* Adjust margin-top for the ul element to center it vertically */
+.hii{
+
+margin: 60px;
+}
+.max {
+margin-top: 10px; /* Added margin-top */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto ;
+}
+*{
+margin:0;
+box-sizing:border-box;
+}
+/***********************header************************/
+
+/*************header end***************/
+.header {
+    width: 95vw;
+    
+padding-left: 10px;
+display: flex;
+justify-content: space-between; /* Align items to start and end */
+align-items: center; /* Center vertically */
+
+}
+.txt{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: rgb(222, 205, 205);
+}
+
+
+.max, a{
+  
+
+ 
+display: flex;
+flex-wrap: wrap;
+justify-content:space-evenly;
+text-decoration:none;
+padding:5px;
+margin: 2px;
+
+align-items:center;
+}
+.max a{
+list-style-type:none;
+color:rgb(7, 1, 1);
+justify-content:space-between;
+margin:8px 13px;
+padding: 20px;
+width:auto;
+}
+.ul{
+  padding:none;
+}
+
+.max li{
+list-style-type:none;
+
+}
+.dance{
+    display:flex
+}
+.dance img{
+    
+        max-height: 100px;
+        border-radius: 70%; /* Add this line for circular shape */
+        margin-right: 10px;
+    }
+    img{
+        max-height: 100px;
+        border-radius: 70%; /* Add this line for circular shape */
+        margin-right: 10px;
+    }
+
+/* .bts img {
+max-height: 100px; /* Set a max height for the image */
+/*margin-right: 10px;*/
+
+/* Add margin for spacing between image and anchor tags */
+
+/*transition-property:translate;
+  transition-duration:3s;
+}
+.boy:hover{
+  transform:translate(360px,0px);
+  transform:rotate(45deg);
+  transform:skew(36deg);
+  
+*/
+.fa {
+font-size: 30px;
+border-radius: 50%;
+padding: 5px 3px 5px 3px;
+text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+background: #3B5998;
+color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+background: #55ACEE;
+color: white;
+}
+.footer{
+display: flex;
+justify-content: space-between;
+padding-left: 20px;
+padding-right: 20px;
+
+}
+
+
+.footer a{
+
+margin: 0 auto;
+
+}
+
+.fa-google {
+background: #dd4b39;
+color: white;
+}
+
+.fa-linkedin {
+background: #007bb5;
+color: white;
+}
+
+.fa-youtube {
+background: #bb0000;
+color: white;
+}
+
+.fa-instagram {
+background: #125688;
+color: white;
+}
+.min{
+display: flex;
+flex-direction: right;
+}
+/********************************* media querry***************/
+@media only screen and (max-width:500px){
+    .header,.img-1,.boy,.flex,#footer{
+        flex-direction:coloumn;
+    }
+.img-info,.bannerinfo{
+    display:none;
+}
+}
+@media only screen and (min-width:577px) and (max-width:768px){
+    .header,.img-1,.boy,.flex,.img-info,.bannerinfo,#footer{
+        flex-direction:coloumn;
+    }
+}
+@media only screen and (min-width:769px) and (max-width:992px){
+   .header,.img-1,.boy,.flex,.img-info,.bannerinfo,#footer{
+        flex-direction:coloumn;
+    }
+} 
+
+@media only screen and (min-width:993px) and (max-width:1200px){
+    .header,.img-1,.boy,.flex,#footer{
+        flex-direction:coloumn;
+    }
+.img-info,.bannerinfo{
+    display:none;
+}
+}

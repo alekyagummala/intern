@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    <style>
+        *{
+    margin:0;
+    box-sizing: border-box;
+}
+        body{
+            font-family: 'Arial', sans-serif;
+    margin:0;
+        }
+        img{
+            border-radius: 70px;
+        }
+        .img{
+            display: flex;
+        }
+        .footer{
+display: flex;
+justify-content: space-between;
+padding: 400px;
+padding-left: 20px;
+padding-right: 20px;
+
+}
+
+
+.footer a{
+
+margin: 0 auto;
+
+}
+.fa-facebook {
+background: #3B5998;
+color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+background: #55ACEE;
+color: white;
+}
+.fa-google {
+background: #dd4b39;
+color: white;
+}
+
+.fa-linkedin {
+background: #007bb5;
+color: white;
+}
+
+.fa-youtube {
+background: #bb0000;
+color: white;
+}
+
+.fa-instagram {
+background: #125688;
+color: white;
+}
+.min{
+display: flex;
+flex-direction: right;
+}
+/********************************* media querry***************/
+@media only screen and (max-width:500px){
+    .header,.img-1,.boy,.flex,#footer{
+        flex-direction:coloumn;
+    }
+.img-info,.bannerinfo{
+    display:none;
+}
+}
+@media only screen and (min-width:577px) and (max-width:768px){
+    .header,.img-1,.boy,.flex,.img-info,.bannerinfo,#footer{
+        flex-direction:coloumn;
+    }
+}
+@media only screen and (min-width:769px) and (max-width:992px){
+   .header,.img-1,.boy,.flex,.img-info,.bannerinfo,#footer{
+        flex-direction:coloumn;
+    }
+} 
+
+@media only screen and (min-width:993px) and (max-width:1200px){
+    .header,.img-1,.boy,.flex,#footer{
+        flex-direction:coloumn;
+    }
+.img-info,.bannerinfo{
+    display:none;
+}
+}
+.hii{
+
+margin: 60px;
+}
+@keyframes blinkText {
+        0% { color: red; }
+        25% { color: blue; }
+        50% { color: green; }
+        75% { color: orange; }
+        100% { color: purple; }
+    }
+
+    .blinking {
+        animation: blinkText 2s infinite;
+    }
+    </style>
+</head>
+<body style="height: 100vh;color: rgb(220, 231, 234);background-image: url(./images/singing9s.jpeg);background-repeat: no-repeat;width: 100%;background-size: 100%;position: absolute;
+left: 0px;
+
+top: 0px;
+z-index: -1;">
+    <div class="hii">
+        <header>
+        <center><h1 class="blinking">SINGING FOR LIFE</h1></center>
+    </header>
+    <main>
+        <div class="img">
+            <!--<img src="./images/singing8.jpeg" alt="balle"/>-->
+            <p>
+              <ul>
+                <li>
+                    <h1>Classical Singing:
+                    </h1>
+
+                    
+                    Characterized by a formal and structured approach, classical singing focuses on techniques such as breath control, vocal agility, and precise pitch.
+                    It includes opera, art songs, and oratorio performances.
+                </li>
+                <li><h1>
+                    Rock Singing:
+                </h1>
+
+                    Rock singing involves powerful and often raspy vocals, with an emphasis on energy and intensity.
+                    It includes a wide range of sub-genres, from classic rock to heavy metal, each with its vocal characteristics.
+                <li> Trained under the guidance of renowned ballet masters and mentors
+                </li>
+                <li>
+                    <h1>Pop Singing:</h1>
+
+Pop singing is diverse and encompasses various styles within popular music.
+It often features a more relaxed vocal style, with an emphasis on expression, emotion, and storytelling.
+
+
+                </li>
+                <li><h1>Jazz Singing:</h1>
+
+                    Jazz singing is characterized by improvisation, scat singing, and a strong connection to rhythm.
+                    Vocalists in jazz explore unique phrasing and use their voices as instruments in ensemble settings.
+              </ul>
+                </p>
+        </div>
+    </main>
+</div>
+    <footer><div class="footer"style="color:azure" >
+        <p style="color: blueviolet;">Explore the World of singing</p>
+        <div>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-google"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-youtube"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        </div>
+        </div></footer>
+   
+</body>
+</html>

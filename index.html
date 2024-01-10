@@ -1,0 +1,85 @@
+<!-- public/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ExploreSkillApp</title>
+  <style>
+    @keyframes blinkText {
+        0% { color: red; }
+        25% { color: blue; }
+        50% { color: green; }
+        75% { color: orange; }
+        100% { color: purple; }
+    }
+
+    .blinking {
+        animation: blinkText 2s infinite;
+    }
+</style>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body style="height: 100vh;border: 1px solid;background-image: url(./images/Students.png);background-repeat: no-repeat;width: 100%;background-size: 100%;">
+  <div class="container mt-5 text-center" style="color: #ffffff;width: fit-content;padding: 20px;background-color: rgba(255,255,255,0.1) ;">
+    <h1 class="blinking" style="color: #000000;font-size-adjust: 10px;">Welcome to ExploreSkillApp</h1>
+    <p>Choose a skill to explore and sign up!</p>
+
+    <!-- <div class="form-group">
+      <label for="skillDropdown">Select a skill:</label>
+      <select class="form-control" id="skillDropdown">
+         skills.forEach(skill =>
+          <option value="skill.id ">= skill.name </option>
+        ); 
+      </select>
+    </div> -->
+
+    <div class="card-deck d-flex justify-content-center w-100">
+      <!-- Dynamically generate cards for each skill -->
+      <skills.forEach skill > 
+        <div class="card">
+          <!-- <img src="= `images/${skill.name.toLowerCase()}.jpg` " class="card-img-top" alt="= skill.name "> -->
+          <div class="card-body">
+            <h5 class="card-title">  </h5>
+            <label for="skillDropdown" style="color: #000000;">Select a skill:</label>
+            
+            <select class="form-control" class="rounded-pill"  id="skillDropdown">
+              <option value="painting.html" class="rounded-pill">Painting</option>
+              <option value="dancing.html">Dancing</option>
+              <option value="singing.html">Singing</option>
+              <option value="roasting.html">Roasting</option>
+              <!-- <option>Dancing</option>
+              <option>Singing</option>
+              <option>Painting</option>
+              <option>Roosting</option> -->
+            </select>
+
+            <!-- <p class="card-text"> skill.description </p> -->
+            <!-- <a href="signup_singing.html" class="btn btn-primary">Sign Up For Singing</a>
+            <a href="signup_dancing.html" class="btn btn-primary">Sign Up for Dancing</a>
+            <a href="signup_painting.html" class="btn btn-primary">Sign Up for Painting</a>
+            <a href="signup_roosting.html" class="btn btn-primary">Sign Up for roasting</a> -->
+          </div>
+          <!-- <button class="btn btn-primary" onclick="redirectToSignup()">Explore Skill</button> -->
+          <a id="redirectLink" href="#" class="btn btn-primary" onclick="redirectToSelectedPage()">Explore Skill</a>
+        </div>
+
+  </div>
+
+  <script>
+    // function redirectToSignup() {
+    //   const dropdown = document.getElementById('skillDropdown');
+    //   const selectedSkill = dropdown.value;
+    //   window.location.href = `/signup_${selectedSkill}.html`;
+    // }
+    function redirectToSelectedPage() {
+      var dropdown = document.getElementById("skillDropdown");
+      var selectedValue = dropdown.options[dropdown.selectedIndex].value;
+      document.getElementById("redirectLink").href = selectedValue;
+      document.getElementById("redirectLink").click();
+    }
+  </script>
+
+</body>
+</html>
